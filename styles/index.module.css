@@ -1,0 +1,7 @@
+.posts ul {
+    list-style-type: none;
+}
+
+.posts li {
+    padding: 0px 0px 10px;
+}

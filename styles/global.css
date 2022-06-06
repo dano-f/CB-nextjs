@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+:root {
+    --background-color: #4a6580;
+    --card-background-color: #806a56;
+    --text-light: #e9f0e9;
+    --text-dark: #c7c7c7;
+    --text-hover: #ddd39d;
+    --transparent-bg-color: rgba(128, 106, 86, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-light);
+
+    /*
+    background-image: url('../public/images/pexels-anna-urlapova-3061345.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    */
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    margin: 10px auto;
+}
+
+a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}

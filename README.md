@@ -1,0 +1,1 @@
+Next.js static portfolio site for a pal. Mostly just the tutorial for now with some CSS adjustments.

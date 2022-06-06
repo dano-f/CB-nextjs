@@ -1,0 +1,56 @@
+.container {
+    max-width: 900px;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* height: 100%; */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-background-color);
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);        
+    padding: 10px 20px;
+}
+
+.hide_overflow {
+    overflow: hidden;
+}
+
+.justify_self {
+    justify-self: center;
+}
+
+/* Media queries */
+@media(max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+    }
+
+    .first_child_to_first>*:first-child {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .last_child_to_first>*:last-child {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+}

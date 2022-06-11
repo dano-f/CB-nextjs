@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../components/layout';
+import Container from '../components/container';
+import Card from '../components/card';
 import Date from '../components/date';
 import styles from '../styles/index.module.css';
-import utilityStyles from '../styles/utilities.module.css';
 
 import { getSortedPostsData } from '../lib/posts';
 
@@ -25,8 +26,8 @@ export default function Home({ allPostsData }) {
             </Head>
 
             <section className={styles.posts}>
-                <div className={utilityStyles.container}>
-                    <div className={utilityStyles.card}>
+                <Container>
+                    <Card>
                         <h1>Posts</h1>
                         <ul>
                             {allPostsData.map(({ id, date, title }) => (
@@ -37,12 +38,12 @@ export default function Home({ allPostsData }) {
                                     <br />
                                     <small>
                                         <Date dateString={date} />
-                                    </small>                                    
+                                    </small>
                                 </li>
                             ))}
                         </ul>
-                    </div>
-                </div>
+                    </Card>
+                </Container>
             </section>
 
         </Layout>

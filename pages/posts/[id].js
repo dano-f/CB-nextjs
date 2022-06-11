@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Layout from '../../components/layout';
+import Container from '../../components/container';
+import Card from '../../components/card';
 import Date from '../../components/date';
 import { getAllPostIds, getPostData } from '../../lib/posts';
-import utilityStyles from '../../styles/utilities.module.css';
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id);
@@ -30,13 +31,13 @@ export default function Post({ postData }) {
             </Head>
 
             <article>
-                <div className={utilityStyles.container}>
-                    <div className={utilityStyles.card}>
+                <Container>
+                    <Card>
                         <h1>{postData.title}</h1>
                         <Date dateString={postData.date} />
                         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-                    </div>
-                </div>
+                    </Card>
+                </Container>
             </article>
 
         </Layout>

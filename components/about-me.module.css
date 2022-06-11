@@ -1,0 +1,11 @@
+/* .about_me h1 {
+    font-size: 30px;
+} */
+
+.about_me img {
+    border-radius: 50%;
+}
+
+.about_me a {
+    padding: 5px;
+}

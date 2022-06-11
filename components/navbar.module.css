@@ -1,0 +1,27 @@
+.navbar {
+    height: 70px;
+    background-color: var(--transparent-bg-color);
+}
+
+.navbar a {
+    color: var(--text-light);
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    /* border-bottom: 2px #fff solid; */
+    /* color: var(--text-hover); */
+    font-size: 20px;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar .flex {
+    justify-content: space-around;
+}
